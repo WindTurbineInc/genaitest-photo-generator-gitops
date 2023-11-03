@@ -1,0 +1,15 @@
+app:
+  name: genaitest-photo-generator-app
+  namespace: genaitest
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/genaitest-photo-generator
+  org: WindTurbineInc
+  name: genaitest-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: genaitest/photo-generator-app
+  tag: latest
